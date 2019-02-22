@@ -1,9 +1,12 @@
 import React from "react";
 
-function Results() {
+function Results(props) {
   return (
     <div className="results">
-      <h2> Results </h2>
+      <img src={props.data.poster_path} alt="movie poster" />
+      <h2>{props.data.original_title}</h2>
+      <h2>{props.data.movieID}</h2>
+      <h2>{props.data.movieID}</h2>
     </div>
   );
 }
